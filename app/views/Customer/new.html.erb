@@ -1,0 +1,26 @@
+<h1> new file </h1>
+<%= form_for @Customer do |c| %>
+<div>
+  <%= c.label :serial_no %>
+  <%= c.text_field :serial_no %>
+</div>
+<div>
+  <%= c.label :customer_name %>
+  <%= c.text_field :customer_name %>
+</div>
+<div>
+  <%= c.label :book_name %>
+  <%= c.text_field :book_name %>
+</div>
+<div>
+  <%= c.label :issue_date %>
+  <%= c.text_field :issue_date %>
+</div>
+<div>
+  <%= c.label :due_date %>
+  <%= c.text_field :due_date %>
+</div>
+<div>
+  <%= c.continue %>
+</div>
+<% end %>

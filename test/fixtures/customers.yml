@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  serial_no.: 1
+  customer_name: MyString
+  book_name: MyString
+  issue_date: 2018-07-10 11:19:33
+  due_date: 2018-07-10 11:19:33
+
+two:
+  serial_no.: 1
+  customer_name: MyString
+  book_name: MyString
+  issue_date: 2018-07-10 11:19:33
+  due_date: 2018-07-10 11:19:33

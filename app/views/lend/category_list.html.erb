@@ -1,0 +1,9 @@
+<h1>CATEGORIES</h1>
+<h2>LIST OF BOOKS</h2>
+<body>
+    <form action="category">
+      <% @b.each do |b1| %>
+        <%= link_to b1.category,lend_category_path(category: b1.category) %><br><br>
+      <% end %>
+    </form>
+</body>

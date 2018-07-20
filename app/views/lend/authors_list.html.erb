@@ -1,0 +1,9 @@
+<h1>AUTHORS</h1>
+<h2>LIST OF BOOKS</h2>
+<body>
+    <form action="authors">
+      <% @b.each do |b1| %>
+        <%= link_to b1.authors,lend_authors_list_path(authors: b1.authors) %><br><br>
+      <% end %>
+    </form>
+</body>

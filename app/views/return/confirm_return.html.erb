@@ -1,0 +1,6 @@
+<h3>THE BOOK HAS BEEN RETURNED SUCCESSFULLY </h3>
+<% @tick_book.each do |s| %>
+  <%= s %><br>
+<% end %>
+<%= link_to "Change Address?",address_Address_path %><br><br>
+<%= link_to "Home",home_index_path %>

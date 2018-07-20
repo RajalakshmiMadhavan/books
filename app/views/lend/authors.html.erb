@@ -1,0 +1,11 @@
+<h1> LENDING </h1>
+<p> select the books under authors_list </p>
+<body>
+  <form action="next" method="get">
+    <% @author.each do |b| %>
+      <%= check_box_tag( "authors[]", b.book_name , checked=false , options={}) %>
+      <%= b.book_name %><br><br>
+    <% end %>
+    <%=submit_tag%>
+  </form>
+</body>

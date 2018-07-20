@@ -1,0 +1,14 @@
+.library{
+  color: red;
+}
+body{
+  background-image :url("book1.jpg");
+  background-size: cover;
+  color: #fff;
+}
+a:link{
+    color:#e3163e
+}
+a:visited{
+  color:#ec1d1d
+}

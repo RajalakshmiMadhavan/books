@@ -1,0 +1,14 @@
+<h1 class="library">LIBRARY</h1>
+<body class="text">
+<p>This app will help you to lend the books </p>
+<p>This app will help you to lend the books</p>
+<p>This app will help you to lend the books</p>
+<p>This app will help you to lend the books</p>
+</body>
+<% if user_signed_in?%>
+  <%= link_to "logout", destroy_user_session_path ,method: :delete%>
+  <%= link_to "Library" ,home_Library_path%>
+<% else%>
+  <%= link_to "login", new_user_session_path%>
+  <%= link_to "sign_up", new_user_registration_path %>
+<%end%>

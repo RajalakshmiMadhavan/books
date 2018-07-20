@@ -1,0 +1,14 @@
+<%if @flag1==0 %>
+  <h1> RETURN </h1>
+  <p> these are the books to be returned by you </p>
+  <p>return the books before the due date or 15 days from the issue date </p>
+  <form action="confirm_return??" method="get" >
+    <% @return_books.each do |r| %>
+      <%= check_box_tag( "category[]", r , checked=false , options={}) %>
+      <%= r %><br><br>
+      <%= @due_date %><br><br>
+      <%= link_to "DUE",return_Fine_path %><br><br>
+    <% end %>
+    <%=submit_tag %>
+  </form>
+<% end %>

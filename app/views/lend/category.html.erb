@@ -1,0 +1,11 @@
+<h1> LENDING </h1>
+<p> select the books under  category </p>
+<body>
+  <form action="next" method="get">
+    <% @book.each_with_index do |b,i| %>
+      <%= check_box_tag( "category[]", b.book_name , checked=false , options={}) %>
+      <%= link_to b.book_name, review_review_path(id: b.id) %><br><br>
+    <% end %>
+    <%=submit_tag%>
+  </form>
+</body>
