@@ -5,6 +5,14 @@ App1::Application.routes.draw do
 
   root to: "home#index"
 
+  get 'admin/admin'
+
+  get 'admin/check'
+
+  get 'admin/addbooks'
+
+  get 'admin/deletebooks'
+
   get 'home/Library'
 
   get 'lend/Lend'
@@ -19,7 +27,9 @@ App1::Application.routes.draw do
 
   get 'lend/authors_list'
 
-  get 'lend/next'
+  get 'lend/next1'
+
+  get 'lend/next2'
 
   get 'address/Address'
 

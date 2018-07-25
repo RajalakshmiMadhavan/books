@@ -1,4 +1,4 @@
-class ReturnController < ApplicationController
+class ReviewController < ApplicationController
   def review
     @book  = Book.find(params[:id])
   end
